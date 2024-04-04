@@ -1,0 +1,5 @@
+package com.pat.hello.controllers;
+
+public class HelloWorldController {
+
+}
