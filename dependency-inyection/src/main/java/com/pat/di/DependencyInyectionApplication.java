@@ -13,6 +13,7 @@ import com.pat.di.qualifiers.Animal;
 import com.pat.di.qualifiers.Nido;
 import com.pat.di.qualifiers.Pajaro;
 import com.pat.di.qualifiers.Perro;
+import com.pat.di.scopes.EjemploScopeService;
 
 @SpringBootApplication
 public class DependencyInyectionApplication {
@@ -22,8 +23,11 @@ public class DependencyInyectionApplication {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(DependencyInyectionApplication.class, args);
-		EnvironmentService environmentService = context.getBean(EnvironmentService.class);
-		log.info("Active environment {}", environmentService.getEnvironment());
+		EjemploScopeService ejemploScopeService = context.getBean(EjemploScopeService.class);
+		EjemploScopeService ejemploScopeService1 = context.getBean(EjemploScopeService.class);
+		
+		log.info("Este Bean es equal {}", ejemploScopeService.equals(ejemploScopeService1));
+		log.info("Este Bean es == {}", ejemploScopeService.equals(ejemploScopeService1));
 	}
 
 }
