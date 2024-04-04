@@ -8,6 +8,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 import com.pat.di.atributo.Coche;
 import com.pat.di.atributo.Motor;
+import com.pat.di.profiles.EnvironmentService;
 import com.pat.di.qualifiers.Animal;
 import com.pat.di.qualifiers.Nido;
 import com.pat.di.qualifiers.Pajaro;
@@ -21,11 +22,8 @@ public class DependencyInyectionApplication {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(DependencyInyectionApplication.class, args);
-		//Perro perro = context.getBean(Perro.class);
-		//Animal animal = context.getBean("perrito", Animal.class);
-		//log.info("Objeto animal, nombre: {} edad: {}", animal.getNombre(), animal.getEdad());
-		Nido nido = context.getBean(Nido.class);
-		nido.imprimir();
+		EnvironmentService environmentService = context.getBean(EnvironmentService.class);
+		log.info("Active environment {}", environmentService.getEnvironment());
 	}
 
 }
