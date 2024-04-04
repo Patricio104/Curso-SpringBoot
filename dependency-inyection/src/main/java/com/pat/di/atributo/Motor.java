@@ -11,15 +11,14 @@ public class Motor {
 	private Integer modelo;
 
 	
-	public Motor(@Value("VW")String marca, @Value("1980")Integer modelo) {
-		this.marca = marca;
-		this.modelo = modelo;
+	public Motor() {
 	}
-
+	
 	public String getMarca() {
 		return marca;
 	}
 
+	@Value("VW")
 	public void setMarca(String marca) {
 		this.marca = marca;
 	}
@@ -27,7 +26,7 @@ public class Motor {
 	public Integer getModelo() {
 		return modelo;
 	}
-
+	 @Value("1980")
 	public void setModelo(Integer modelo) {
 		this.modelo = modelo;
 	}
