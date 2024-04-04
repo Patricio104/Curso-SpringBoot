@@ -14,10 +14,6 @@ public class DependencyInyectionApplication {
 		ConfigurableApplicationContext context = SpringApplication.run(DependencyInyectionApplication.class, args);
 		Coche coche = context.getBean(Coche.class);
 		System.out.println(coche);
-		//Motor motor = new Motor("x11", 1980);
-		//Coche coche = new Coche("VmW", 1987, motor);
-		
-		//System.out.println(coche);
 	}
 
 }

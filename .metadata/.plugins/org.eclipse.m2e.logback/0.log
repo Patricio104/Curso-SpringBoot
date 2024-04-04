@@ -669,3 +669,12 @@ Caused by: java.lang.Exception: File not found: C:\Users\patro\Documents\workspa
 2024-04-04 08:05:51,307 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-04-04 08:05:51,315 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-04-04 08:05:51,322 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\patro\Documents\workspace-spring-tool-suite-4-4.22.0.RELEASE\dependency-inyection\src\test\resources
+2024-04-04 08:07:25,914 [Worker-14: Launching dependency-inyection - DependencyInyectionApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-04-04 08:07:26,120 [Worker-14: Launching dependency-inyection - DependencyInyectionApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-04-04 08:07:26,132 [Worker-14: Launching dependency-inyection - DependencyInyectionApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\patro\Documents\workspace-spring-tool-suite-4-4.22.0.RELEASE\dependency-inyection\src\test\resources
+2024-04-04 08:13:32,969 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-04-04 08:13:32,979 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-04-04 08:13:32,985 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\patro\Documents\workspace-spring-tool-suite-4-4.22.0.RELEASE\dependency-inyection\src\test\resources
+2024-04-04 08:14:26,744 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-04-04 08:14:26,762 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-04-04 08:14:26,765 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\patro\Documents\workspace-spring-tool-suite-4-4.22.0.RELEASE\dependency-inyection\src\test\resources

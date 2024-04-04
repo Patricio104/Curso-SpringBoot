@@ -6,19 +6,16 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Coche {
-	@Value("XL1")
+	
 	private String marca;
-	@Value("1082")
+	
 	private Integer modelo;
 	
-	@Autowired
+	
 	private Motor motor;
 	
-	public Coche() {
-		
-	}
-
-	public Coche(String marca, Integer modelo, Motor motor) {
+	@Autowired
+	public Coche(@Value("XL1")String marca, @Value("1082")Integer modelo, Motor motor) {
 		this.marca = marca;
 		this.modelo = modelo;
 		this.motor = motor;
