@@ -3,9 +3,13 @@ package com.pat.di;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
 import com.pat.di.atributo.Coche;
 import com.pat.di.atributo.Motor;
@@ -17,7 +21,9 @@ import com.pat.di.qualifiers.Pajaro;
 import com.pat.di.qualifiers.Perro;
 import com.pat.di.scopes.EjemploScopeService;
 
-@SpringBootApplication
+@Configuration
+@ComponentScan
+@EnableAutoConfiguration
 public class DependencyInyectionApplication {
 	
 	private static final Logger log = LoggerFactory.getLogger(DependencyInyectionApplication.class);
