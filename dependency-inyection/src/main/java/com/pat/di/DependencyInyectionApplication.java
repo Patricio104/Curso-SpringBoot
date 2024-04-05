@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Bean;
 
 import com.pat.di.atributo.Coche;
 import com.pat.di.atributo.Motor;
+import com.pat.di.autowired.AreaCalculatorService;
 import com.pat.di.profiles.EnvironmentService;
 import com.pat.di.qualifiers.Animal;
 import com.pat.di.qualifiers.Nido;
@@ -27,8 +28,8 @@ public class DependencyInyectionApplication {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(DependencyInyectionApplication.class, args);
-		String nombreAplicacion = context.getBean(String.class);
+		AreaCalculatorService calculator = context.getBean(AreaCalculatorService.class);
 		
-		log.info("Nombre aplicación {}", nombreAplicacion);
+		log.info("Area total {}", calculator.calcAreas());
 	}
 }
