@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.Bean;
 
 import com.pat.di.atributo.Coche;
 import com.pat.di.atributo.Motor;
@@ -19,15 +20,15 @@ import com.pat.di.scopes.EjemploScopeService;
 public class DependencyInyectionApplication {
 	
 	private static final Logger log = LoggerFactory.getLogger(DependencyInyectionApplication.class);
-
+	@Bean
+	public String getApplicactionName() {
+		return "Patrick App!";
+	}
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(DependencyInyectionApplication.class, args);
-		EjemploScopeService ejemploScopeService = context.getBean(EjemploScopeService.class);
-		EjemploScopeService ejemploScopeService1 = context.getBean(EjemploScopeService.class);
+		String nombreAplicacion = context.getBean(String.class);
 		
-		log.info("Este Bean es equal {}", ejemploScopeService.equals(ejemploScopeService1));
-		log.info("Este Bean es == {}", ejemploScopeService.equals(ejemploScopeService1));
+		log.info("Nombre aplicación {}", nombreAplicacion);
 	}
-
 }
